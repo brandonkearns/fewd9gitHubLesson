@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>THD IT Training</section>
+
+				<section>designed for current associates looking to modernize their software development toolkit</section>
+
+				<section>
+					<section>3 pillars</section>
+					<section>instructor team</section>
+					<section>curriculum</section>
+					<section>environment</section>
+				</section>
+
+				<section>
+					<section>instructor team</section>
+					<section>a TA is necessary to facilitate smooth pacing and provide a different perspective</section>
+					<section>multiple instructors may be beneficial for certain curricula</section>
+					<section>in any case, instructor should be comfortable across the stack [no siloed SMEs]</section>
+					<section>experience/expertise in software != teaching ability</section>
+					<section>the search is for empathy & passion</section>
+				</section>
+
+				<section>
+					<section>curriculum</section>
+					<section>not teaching skills, rather process
+						<br> product-based
+					</section>
+					<section>lab component to reinforce skill areas</section>
+					<section>
+						<h3>tech stack</h3>
+						<ul>
+							<li>ruby on rails</li>
+							<li>MEAN</li>
+						</ul>
+					</section>
+					<section>in lieu of an embedded designer, an iterative design spec should drive the product</section>
+				</section>
+
+				<section>
+					<section>environment</section>
+					<section>associates must be fully immersed in the course & not be expected in their workstream</section>
+					<section>iMacs per student to be paired via ScreenHero for project work <br> (pairing is required) </section>
+					<section>15-18 students</section>
+					<section>glass walls?</section>
+					<section>unlimited coffee</section>
+					<section>guest speakers</section>
+				</section>
+
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
