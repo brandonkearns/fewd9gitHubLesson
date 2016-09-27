@@ -1,13 +1,14 @@
 <!doctype html>
 <html>
 	<head>
-		<meta charset="utf-8">
+		<meta http-equiv="Content-Type" content="text/html" charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 		<title>reveal.js</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/white.css">
+		<link rel="stylesheet" href="css/emoji.css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -32,7 +33,86 @@
 				<section data-background="http://i.imgur.com/TYeF7Gj.gif">
                 </section>
                     
-                <section></section>
+                <section>
+                    <h1 class="fragment fade-down">Homework review</h1>
+                    <span class="fragment fade-up">&#x1F612</span>
+                </section>
+                
+                <section>
+                    <h2>jQuery document.ready</h2>
+                     <pre>             
+                        <code data-no-escape>
+$(document).ready(function() {
+    // Write code here that requires 
+    // user interactivity (event handlers, etc)
+});
+                        </code>
+                     </pre>
+                </section>
+                
+                <section>
+                    <h2>event parameter</h2>
+                    <pre>
+                        <code data-no-escape>
+$(".readmore").click(function(event) {
+    event.preventDefault();
+})
+                        </code>
+                    </pre>
+                </section>
+                
+                <section>
+                   <section>
+                    <h2>event parameter</h2>
+                    <p>for any event handler <code>.click()</code>, <code>.mouseover()</code>, etc. data about the event is passed to the function</p>
+                    <p>It may contain...</p>
+                   </section>
+                   <section>
+                       <p>the coordinates of the cursor on the page</p>
+                   </section>
+                   <section>
+                       <p>which key was pressed</p>
+                   </section>
+                   <section>
+                       <p>where or whether the mouse was clicked</p>
+                   </section>
+                </section>
+                
+                <section>
+                    <section>
+                        <p>the event parameter also exposes some functions</p>
+                    </section>
+                    <section>
+                        <code>.preventDefault();</code>
+                        <p>prevents the normal action of an event from occurring</p>
+                        <p>example: disabling an anchor tag from navigating to its <code>href</code></p>
+                    </section>
+                    <section>
+                        <code>.isDefaultPrevented();</code>
+                        <p>returns a boolean value {true or false} based on whether <code>.preventDefault();</code> was used on that event</p>
+                    </section>
+                    <section>
+                        <P>MANY MORE!</P>
+                    </section>
+                </section>
+                
+                <section>
+                   <section>
+                       NAVIGATE TO THE CODEPEN LINKED IN SLACK
+                   </section>
+                   <section>
+                       <p><code>.slideUp()</code> on the boxes</p>
+                   </section>
+                   <section>
+                       <p>change the content of the <code data-no-escape>h3</code> to be current date when the button is clicked</p>
+                   </section>
+                   <section>
+                       <h3>Try this:</h3>
+                       <code>
+$("h3").animate({fontSize: "100px"}, 5000);
+                       </code>
+                   </section>
+                </section>
 				
 				<section>
 					<section id="fragments">
@@ -42,46 +122,40 @@
 						<p class="fragment fade-up">apply conditionals to change the program's control flow</p>
 					</section>
 				</section>
-
+				
 				<section>
-					<h2>a <span class="fragment highlight-blue"> program </span>is a set of instructions that a computer executes</h2>
+				    <h1>What are variables?</h1>
 				</section>
-
+				
 				<section>
-					<h1 class="fragment grow">YOU</h1>
-					<p class="fragment fade-up">tell the computer what to do</p>
-					<p class="fragment fade-up" style="color:red;">this is programming</p>
+                    <section>
+				        <p>a named container that holds a value</p>
+                    </section>
+                    <section>
+                        <p>you can set the value of a variable</p>
+                        <code>var dayOfWeek="Tuesday";</code>
+                        <p>this is called "assignment"</p>
+                    </section>
+                    <section>
+                        <p>you can get the value of a variable</p>
+                        <code>dayOfWeek</code>
+                        <p>this is called "accessing"</p>
+                    </section>
 				</section>
-
-				<section>
-					<h1>pseudocode</h1>
-					<p class="fragment fade-left">programmatic logic written in human language</p>
-				</section>
-
-				<section data-background="https://upload.wikimedia.org/wikipedia/commons/4/49/OfficeThermostat.jpg">
-				</section>
-
-				<section data-background="https://forwardthinking.honeywell.com/related_links/wireless/wifi_focuspro/TH6320WF1005_Hi-Res.jpg"></section>
-
-				<section data-background="http://www.thecomfortsquad.com/wp-content/uploads/nest.jpg">
-				</section>
+				
+				
 
 				<section>
 					<h2>questions?</h2>
 				</section>
 				
-				<section>
-				    <img src="http://graph.darren-criss.org/2016/02/15/electrical-symbols-house-wiring-diagrams-l-464e82b5db07b97f.jpg" alt="Javascript is the wiring and plumbing in our house (interactivity)">
-				</section>
-				
-				<section>
-				    <img width="400" height="446" data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/DOM-model.svg/220px-DOM-model.svg.png">
-				</section>
 				
 			</div>
 		</div>
 
 		<script src="lib/js/head.min.js"></script>
+		<script src="js/emoji.js"></script>
+		<script src="http://twemoji.maxcdn.com/twemoji.min.js"></script>
 		<script src="js/reveal.js"></script>
 
 		<script>
